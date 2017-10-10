@@ -58,6 +58,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PageObjects\BookPageObjects\BookPage.cs" />
+    <Compile Include="PageObjects\BookPageObjects\BookPageElementMap.cs" />
     <Compile Include="PageObjects\PageObject.cs" />
     <Compile Include="TestCases\UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
