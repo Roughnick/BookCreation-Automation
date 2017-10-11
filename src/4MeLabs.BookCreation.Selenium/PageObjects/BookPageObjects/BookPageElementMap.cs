@@ -13,5 +13,6 @@ namespace _4MeLabs.BookCreation.Selenium.PageObjects.BookPageObjects
         public By AddBookBtn => By.Id("add_book");
         public By BookTable => By.Id("book_list");
         public By NewRowAdded => By.XPath("//td[contains(.,'Just Now')]");
+        public By NewBookNameField => By.ClassName("form-control");
     }
 }

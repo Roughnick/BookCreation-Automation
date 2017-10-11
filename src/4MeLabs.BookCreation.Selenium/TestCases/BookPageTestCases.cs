@@ -3,12 +3,12 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-
+using _4MeLabs.BookCreation.Selenium.PageObjects.BookPageObjects;
 
 namespace _4MeLabs.BookCreation.Selenium
 {
     [TestClass]
-    public class UnitTest1
+    public class BookPageTestCases
     {
         static IWebDriver Driver;
 
@@ -20,9 +20,11 @@ namespace _4MeLabs.BookCreation.Selenium
         }
 
         [TestMethod]
-        public void TestMethod1()
+        public void AddNewBook()
         {
-            Driver.Navigate().GoToUrl("http://tohru.4melabs.com/ikigai/books.php");
+            var bookStuff = new BookPage(Driver);
+            bookStuff.GoToUrl("http://tohru.4melabs.com/ikigai/books.php");
+            bookStuff.AddNewBook("AutomationTest");
             Driver.Quit();
         }
     }

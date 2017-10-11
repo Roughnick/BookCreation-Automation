@@ -61,15 +61,14 @@
     <Compile Include="PageObjects\BookPageObjects\BookPage.cs" />
     <Compile Include="PageObjects\BookPageObjects\BookPageElementMap.cs" />
     <Compile Include="PageObjects\PageObject.cs" />
-    <Compile Include="TestCases\UnitTest1.cs" />
+    <Compile Include="TestCases\BookPageTestCases.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\WebDriverExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Util\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="chromedriver.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
